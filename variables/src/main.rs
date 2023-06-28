@@ -1,4 +1,5 @@
 fn main() {
+    // ## Overshading and Scope ##
     // let x = 5;
 
     // // Overshadowing previous instance of x
@@ -20,9 +21,36 @@ fn main() {
     // y = 10;
     // println!("The value of y is: {y}");
 
-    let tup = (500, 6.4, 1);
+    // ## Character Type ##
+    // let c = 'z';
+    // let z: char = 'ℤ';
+    // let heart_eyed_cat = '😻';
 
-    let (x, y, z) = tup;
+    // println!("variable c is: {c}");
+    // println!("variable z is: {z}");
+    // println!("variable heart_eyed_cat is: {heart_eyed_cat}");
 
-    println!("The value of y is: {y}");
+    // ## Compound Types ##
+
+    // # Tuples #
+    // let tup = (500, 6.4, 1);
+
+    // let (x, y, z) = tup;
+
+    // println!("The value of y is: {y}");
+
+    // Tuple destructuring
+
+    // let x: (i32, f64, u8) = (500, 6.1, 1);
+
+    // let five_hundred = x.0;
+    // let six_point_four = x.1;
+    // let one = x.2;
+
+    // println!("five_hundred: {five_hundred}");
+    // println!("six_point_four: {six_point_four}");
+    // println!("one: {one}")
+
+    // # Arrays #
+    let a = [1, 2, 3, 4 ,5];
 }
