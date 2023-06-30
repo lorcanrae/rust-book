@@ -3,7 +3,9 @@ fn main() {
 
     // return_from_loop()
 
-    loop_labels()
+    // loop_labels()
+
+    while_loop()
 }
 
 fn infinite() {
@@ -46,4 +48,16 @@ fn loop_labels() {
         count += 1;
     }
     println!("End count = {count}");
+}
+
+fn while_loop() {
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
 }
