@@ -5,7 +5,13 @@ fn main() {
 
     // loop_labels()
 
-    while_loop()
+    // while_collection()
+
+    // for_collection()
+
+    for_but_better()
+
+    // string_for_fun()
 }
 
 fn infinite() {
@@ -60,4 +66,40 @@ fn while_loop() {
     }
 
     println!("LIFTOFF!!!");
+}
+
+fn while_collection() {
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index += 1;
+    }
+}
+
+fn for_collection() {
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a {
+        println!("the value is: {element}");
+    }
+}
+
+fn for_but_better() {
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn string_for_fun() {
+    for character in "a word".chars().rev() {
+        println!("{character}");
+    }
+    println!("\nEnd'");
+
+    // let mut test1 = "a_word".chars().rev()
+    // println!("{}", test1)
 }
