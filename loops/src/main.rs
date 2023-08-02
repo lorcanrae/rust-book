@@ -7,9 +7,9 @@ fn main() {
 
     // while_collection()
 
-    // for_collection()
+    for_collection()
 
-    for_but_better()
+    // for_but_better()
 
     // string_for_fun()
 }
