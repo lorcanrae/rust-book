@@ -33,7 +33,7 @@ fn main() {
     println!("{}\n", s1);
 
     // Dangling pointer
-    dangle_pointer()
+    dangle_pointer();
 }
 
 fn mut_strings() {
@@ -79,11 +79,15 @@ fn mut_ref_change(somestring: &mut String) {
     somestring.push_str(", world");
 }
 
-fn dangle_pointer() -> &String {
-    // let s = String::from("hello");
+// This returns a reference to a string and will dangle
+// fn dangle() -> &String {
+//     let s = String::from("hello");
 
-    // &s
-    // What to do instead
+//     &s
+// }
+
+// Do this instead
+fn dangle_pointer() -> String { //remove reference from return
     let s = String::from("hello");
 
     s
